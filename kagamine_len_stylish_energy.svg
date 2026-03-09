@@ -1,0 +1,287 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 800" width="500" height="800">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="hairGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFE44D"/>
+      <stop offset="50%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#E6B800"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF0DC"/>
+      <stop offset="100%" stop-color="#FFE0C0"/>
+    </linearGradient>
+    <linearGradient id="hoodieGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2A2A2A"/>
+      <stop offset="100%" stop-color="#1A1A1A"/>
+    </linearGradient>
+    <linearGradient id="shortsGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#E6B800"/>
+    </linearGradient>
+    <linearGradient id="sockGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A1A3A"/>
+      <stop offset="100%" stop-color="#0D0D2A"/>
+    </linearGradient>
+    <linearGradient id="shoeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#CCAA00"/>
+    </linearGradient>
+    <radialGradient id="eyeGrad" cx="0.4" cy="0.35">
+      <stop offset="0%" stop-color="#5BD8E8"/>
+      <stop offset="60%" stop-color="#2BA8CC"/>
+      <stop offset="100%" stop-color="#1A7A9A"/>
+    </radialGradient>
+    <linearGradient id="headphoneGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#CCAA00"/>
+    </linearGradient>
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#00000033"/>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00000022"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="800" fill="#F5F0E8" rx="12"/>
+  <!-- Subtle pattern dots -->
+  <g opacity="0.06">
+    <circle cx="50" cy="50" r="3" fill="#FFD700"/>
+    <circle cx="100" cy="30" r="2" fill="#FFD700"/>
+    <circle cx="150" cy="60" r="3" fill="#FFD700"/>
+    <circle cx="400" cy="40" r="2" fill="#FFD700"/>
+    <circle cx="450" cy="70" r="3" fill="#FFD700"/>
+    <circle cx="350" cy="20" r="2" fill="#FFD700"/>
+    <circle cx="80" cy="750" r="3" fill="#FFD700"/>
+    <circle cx="420" cy="760" r="2" fill="#FFD700"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <!-- ==================== LEGS ==================== -->
+    <!-- Left leg -->
+    <path d="M215 540 L210 580 L208 640 L205 680 L230 680 L233 640 L235 580 L232 540 Z" fill="url(#skinGrad)" stroke="#DDBB99" stroke-width="0.5"/>
+    <!-- Right leg -->
+    <path d="M268 540 L265 580 L263 640 L260 680 L285 680 L288 640 L290 580 L285 540 Z" fill="url(#skinGrad)" stroke="#DDBB99" stroke-width="0.5"/>
+
+    <!-- ==================== SOCKS (knee-high, dark navy) ==================== -->
+    <!-- Left sock -->
+    <path d="M206 560 L204 600 L203 650 L204 685 L232 685 L233 650 L234 600 L233 560 Z" fill="url(#sockGrad)" stroke="#0A0A20" stroke-width="0.8"/>
+    <!-- Left sock top band -->
+    <path d="M206 560 L233 560 L234 565 L205 565 Z" fill="#FFD700" stroke="#CCAA00" stroke-width="0.5"/>
+    <!-- Right sock -->
+    <path d="M266 560 L264 600 L263 650 L264 685 L292 685 L293 650 L294 600 L292 560 Z" fill="url(#sockGrad)" stroke="#0A0A20" stroke-width="0.8"/>
+    <!-- Right sock top band -->
+    <path d="M266 560 L292 560 L293 565 L265 565 Z" fill="#FFD700" stroke="#CCAA00" stroke-width="0.5"/>
+
+    <!-- ==================== SHOES ==================== -->
+    <!-- Left shoe -->
+    <path d="M195 680 L192 700 L188 720 L190 730 L240 730 L242 720 L240 700 L237 680 Z" fill="url(#shoeGrad)" stroke="#AA8800" stroke-width="1"/>
+    <!-- Left shoe sole -->
+    <path d="M188 725 L190 735 L242 735 L244 725 Z" fill="#1A1A1A" stroke="#0A0A0A" stroke-width="0.5"/>
+    <!-- Left shoe accent stripe -->
+    <path d="M196 700 L200 690 L210 690 L206 700 Z" fill="#1A1A1A"/>
+    <!-- Left shoe lace area -->
+    <path d="M208 685 L218 685 L218 705 L208 705 Z" fill="#1A1A1A" opacity="0.6" rx="2"/>
+
+    <!-- Right shoe -->
+    <path d="M255 680 L252 700 L248 720 L250 730 L300 730 L302 720 L300 700 L297 680 Z" fill="url(#shoeGrad)" stroke="#AA8800" stroke-width="1"/>
+    <!-- Right shoe sole -->
+    <path d="M248 725 L250 735 L302 735 L304 725 Z" fill="#1A1A1A" stroke="#0A0A0A" stroke-width="0.5"/>
+    <!-- Right shoe accent stripe -->
+    <path d="M256 700 L260 690 L270 690 L266 700 Z" fill="#1A1A1A"/>
+    <!-- Right shoe lace area -->
+    <path d="M268 685 L278 685 L278 705 L268 705 Z" fill="#1A1A1A" opacity="0.6" rx="2"/>
+
+    <!-- ==================== SHORTS (yellow) ==================== -->
+    <path d="M200 460 L195 480 L198 520 L207 548 L240 550 L250 548 L260 550 L293 548 L298 520 L300 480 L295 460 Z" fill="url(#shortsGrad)" stroke="#CCAA00" stroke-width="1"/>
+    <!-- Shorts center split -->
+    <path d="M248 480 L247 548" stroke="#CCAA00" stroke-width="1.5" fill="none"/>
+    <!-- Shorts pocket lines -->
+    <path d="M210 475 L218 490 L210 500" stroke="#CCAA00" stroke-width="1" fill="none"/>
+    <path d="M285 475 L278 490 L285 500" stroke="#CCAA00" stroke-width="1" fill="none"/>
+    <!-- Shorts waistband -->
+    <path d="M200 460 L295 460 L297 468 L198 468 Z" fill="#1A1A1A" stroke="#0A0A0A" stroke-width="0.5"/>
+
+    <!-- ==================== BODY / TORSO (inner shirt - white/light) ==================== -->
+    <path d="M215 280 L210 320 L205 380 L200 440 L200 465 L295 465 L295 440 L290 380 L285 320 L280 280 Z" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="0.8"/>
+    <!-- Inner shirt collar -->
+    <path d="M225 278 L248 295 L270 278" stroke="#E0E0E0" stroke-width="1.5" fill="none"/>
+    <!-- Tie/ribbon (yellow with black) -->
+    <path d="M240 285 L248 295 L256 285 L252 285 L248 310 L244 285 Z" fill="#FFD700" stroke="#CCAA00" stroke-width="0.5"/>
+    <path d="M245 295 L248 310 L251 295 Z" fill="#1A1A1A" opacity="0.3"/>
+    <!-- Shirt seam lines -->
+    <path d="M248 295 L248 460" stroke="#E8E8E8" stroke-width="0.8" fill="none" stroke-dasharray="4,4"/>
+
+    <!-- ==================== HOODIE / JACKET (black with yellow accents) ==================== -->
+    <!-- Left side of open jacket -->
+    <path d="M190 270 L178 300 L170 350 L168 400 L170 440 L175 470 L200 470 L200 440 L205 380 L210 320 L215 280 L210 270 Z" fill="url(#hoodieGrad)" stroke="#0A0A0A" stroke-width="1"/>
+    <!-- Right side of open jacket -->
+    <path d="M305 270 L318 300 L325 350 L327 400 L325 440 L320 470 L295 470 L295 440 L290 380 L285 320 L280 280 L285 270 Z" fill="url(#hoodieGrad)" stroke="#0A0A0A" stroke-width="1"/>
+
+    <!-- Jacket collar left -->
+    <path d="M210 270 L220 260 L225 278 L215 285 L205 290 L190 270 Z" fill="#2A2A2A" stroke="#0A0A0A" stroke-width="0.8"/>
+    <!-- Jacket collar right -->
+    <path d="M285 270 L275 260 L270 278 L280 285 L290 290 L305 270 Z" fill="#2A2A2A" stroke="#0A0A0A" stroke-width="0.8"/>
+
+    <!-- Yellow accent stripes on jacket - left -->
+    <path d="M175 310 L170 350 L173 350 L178 310 Z" fill="#FFD700"/>
+    <path d="M170 360 L168 400 L171 400 L173 360 Z" fill="#FFD700"/>
+    <!-- Yellow accent stripes on jacket - right -->
+    <path d="M320 310 L325 350 L322 350 L317 310 Z" fill="#FFD700"/>
+    <path d="M325 360 L327 400 L324 400 L322 360 Z" fill="#FFD700"/>
+
+    <!-- Jacket pocket left -->
+    <path d="M178 410 L195 410 L195 445 L178 445 Z" fill="#222222" stroke="#FFD700" stroke-width="1" rx="2"/>
+    <!-- Jacket pocket right -->
+    <path d="M300 410 L317 410 L317 445 L300 445 Z" fill="#222222" stroke="#FFD700" stroke-width="1" rx="2"/>
+
+    <!-- ==================== ARMS ==================== -->
+    <!-- Left arm - sleeve -->
+    <path d="M190 275 L160 300 L140 340 L130 380 L138 385 L150 350 L168 312 L192 288 Z" fill="url(#hoodieGrad)" stroke="#0A0A0A" stroke-width="1"/>
+    <!-- Left arm yellow stripe -->
+    <path d="M155 320 L145 348 L148 350 L158 322 Z" fill="#FFD700"/>
+    <path d="M162 306 L155 320 L158 322 L165 308 Z" fill="#FFD700"/>
+
+    <!-- Left forearm/hand -->
+    <path d="M130 380 L125 410 L123 435 L128 440 L140 440 L143 435 L140 410 L138 385 Z" fill="url(#skinGrad)" stroke="#DDBB99" stroke-width="0.5"/>
+    <!-- Left wristband -->
+    <path d="M128 378 L140 378 L141 386 L127 386 Z" fill="#1A1A1A" stroke="#FFD700" stroke-width="0.8"/>
+
+    <!-- Right arm - sleeve -->
+    <path d="M305 275 L335 300 L355 340 L365 380 L357 385 L345 350 L327 312 L303 288 Z" fill="url(#hoodieGrad)" stroke="#0A0A0A" stroke-width="1"/>
+    <!-- Right arm yellow stripe -->
+    <path d="M340 320 L350 348 L347 350 L337 322 Z" fill="#FFD700"/>
+    <path d="M333 306 L340 320 L337 322 L330 308 Z" fill="#FFD700"/>
+
+    <!-- Right forearm/hand -->
+    <path d="M365 380 L370 410 L372 435 L367 440 L355 440 L352 435 L355 410 L357 385 Z" fill="url(#skinGrad)" stroke="#DDBB99" stroke-width="0.5"/>
+    <!-- Right wristband -->
+    <path d="M355 378 L367 378 L368 386 L354 386 Z" fill="#1A1A1A" stroke="#FFD700" stroke-width="0.8"/>
+
+    <!-- ==================== NECK ==================== -->
+    <path d="M230 248 L228 275 L268 275 L266 248 Z" fill="url(#skinGrad)" stroke="#DDBB99" stroke-width="0.5"/>
+
+    <!-- ==================== HEAD ==================== -->
+    <!-- Head shape -->
+    <ellipse cx="248" cy="200" rx="58" ry="65" fill="url(#skinGrad)" stroke="#DDBB99" stroke-width="0.5"/>
+
+    <!-- ==================== HAIR (spiky blonde) ==================== -->
+    <!-- Back hair -->
+    <path d="M195 170 L190 200 L192 240 L200 260 L210 250 L205 230 L200 200 L205 175 Z" fill="#E6B800"/>
+    <path d="M295 170 L300 200 L298 240 L290 260 L280 250 L285 230 L290 200 L285 175 Z" fill="#E6B800"/>
+
+    <!-- Main hair mass -->
+    <path d="M195 195 L190 160 L200 130 L215 115 L230 108 L248 105 L265 108 L280 115 L295 130 L305 160 L300 195 L295 175 L285 155 L270 142 L248 138 L225 142 L210 155 L200 175 Z" fill="url(#hairGrad)" stroke="#CCAA00" stroke-width="0.5"/>
+
+    <!-- Hair spikes - top -->
+    <path d="M230 108 L222 75 L235 100 Z" fill="url(#hairGrad)" stroke="#CCAA00" stroke-width="0.5"/>
+    <path d="M248 105 L245 65 L255 68 L252 105 Z" fill="url(#hairGrad)" stroke="#CCAA00" stroke-width="0.5"/>
+    <path d="M265 108 L275 78 L268 102 Z" fill="url(#hairGrad)" stroke="#CCAA00" stroke-width="0.5"/>
+    <path d="M240 106 L232 82 L244 100 Z" fill="#FFE44D" stroke="#CCAA00" stroke-width="0.3"/>
+    <path d="M256 106 L262 80 L254 100 Z" fill="#FFE44D" stroke="#CCAA00" stroke-width="0.3"/>
+
+    <!-- Hair spikes - left side -->
+    <path d="M195 195 L175 175 L185 155 L195 170 Z" fill="url(#hairGrad)" stroke="#CCAA00" stroke-width="0.5"/>
+    <path d="M190 165 L170 148 L180 138 L195 155 Z" fill="url(#hairGrad)" stroke="#CCAA00" stroke-width="0.5"/>
+    <path d="M200 150 L178 128 L192 130 L205 145 Z" fill="#FFE44D" stroke="#CCAA00" stroke-width="0.3"/>
+
+    <!-- Hair spikes - right side -->
+    <path d="M300 195 L320 175 L310 155 L300 170 Z" fill="url(#hairGrad)" stroke="#CCAA00" stroke-width="0.5"/>
+    <path d="M305 165 L325 148 L315 138 L300 155 Z" fill="url(#hairGrad)" stroke="#CCAA00" stroke-width="0.5"/>
+    <path d="M295 150 L318 128 L302 130 L290 145 Z" fill="#FFE44D" stroke="#CCAA00" stroke-width="0.3"/>
+
+    <!-- Bangs -->
+    <path d="M200 175 L210 180 L215 195 L205 200 L195 195 Z" fill="url(#hairGrad)" stroke="#CCAA00" stroke-width="0.3"/>
+    <path d="M210 165 L225 175 L228 195 L218 200 L208 190 Z" fill="url(#hairGrad)" stroke="#CCAA00" stroke-width="0.3"/>
+    <path d="M225 160 L240 165 L242 190 L232 195 L222 185 Z" fill="#FFE44D" stroke="#CCAA00" stroke-width="0.3"/>
+    <path d="M240 158 L255 158 L258 185 L245 190 L238 180 Z" fill="url(#hairGrad)" stroke="#CCAA00" stroke-width="0.3"/>
+    <path d="M255 160 L270 165 L272 190 L262 195 L253 185 Z" fill="#FFE44D" stroke="#CCAA00" stroke-width="0.3"/>
+    <path d="M270 165 L282 175 L285 195 L278 200 L268 190 Z" fill="url(#hairGrad)" stroke="#CCAA00" stroke-width="0.3"/>
+    <path d="M282 175 L295 180 L300 195 L292 200 L280 192 Z" fill="url(#hairGrad)" stroke="#CCAA00" stroke-width="0.3"/>
+
+    <!-- Ponytail (small, on top-back) -->
+    <path d="M240 105 L235 80 L230 55 L238 40 L252 38 L260 40 L265 55 L260 80 L255 105 Z" fill="url(#hairGrad)" stroke="#CCAA00" stroke-width="0.8"/>
+    <!-- Ponytail tie -->
+    <ellipse cx="248" cy="95" rx="12" ry="5" fill="#1A1A1A" stroke="#FFD700" stroke-width="1"/>
+
+    <!-- Hair shine highlights -->
+    <path d="M220 130 L235 125 L238 140 L222 142 Z" fill="#FFF5AA" opacity="0.4"/>
+    <path d="M255 128 L270 132 L268 145 L253 140 Z" fill="#FFF5AA" opacity="0.4"/>
+
+    <!-- ==================== FACE ==================== -->
+    <!-- Eyes -->
+    <!-- Left eye -->
+    <ellipse cx="228" cy="200" rx="16" ry="18" fill="white" stroke="#333" stroke-width="1.2"/>
+    <ellipse cx="230" cy="202" rx="12" ry="14" fill="url(#eyeGrad)"/>
+    <ellipse cx="230" cy="205" rx="8" ry="10" fill="#1A7A9A"/>
+    <circle cx="228" cy="196" r="5" fill="white" opacity="0.9"/>
+    <circle cx="235" cy="205" r="2.5" fill="white" opacity="0.6"/>
+    <ellipse cx="230" cy="202" rx="4" ry="5" fill="#0D4A5A"/>
+
+    <!-- Right eye -->
+    <ellipse cx="268" cy="200" rx="16" ry="18" fill="white" stroke="#333" stroke-width="1.2"/>
+    <ellipse cx="266" cy="202" rx="12" ry="14" fill="url(#eyeGrad)"/>
+    <ellipse cx="266" cy="205" rx="8" ry="10" fill="#1A7A9A"/>
+    <circle cx="264" cy="196" r="5" fill="white" opacity="0.9"/>
+    <circle cx="271" cy="205" r="2.5" fill="white" opacity="0.6"/>
+    <ellipse cx="266" cy="202" rx="4" ry="5" fill="#0D4A5A"/>
+
+    <!-- Eyebrows -->
+    <path d="M212 183 L225 178 L240 181" stroke="#CC9900" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M283 183 L270 178 L256 181" stroke="#CC9900" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Eyelashes (top) -->
+    <path d="M212 193 L215 190 L220 189" stroke="#333" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M283 193 L280 190 L275 189" stroke="#333" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Nose (subtle) -->
+    <path d="M247 218 L245 225 L248 227" stroke="#DDBB99" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+
+    <!-- Mouth (confident smile) -->
+    <path d="M237 238 L243 242 L248 243 L253 242 L259 238" stroke="#CC7766" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M241 240 L248 244 L255 240" fill="#E88878" opacity="0.5"/>
+
+    <!-- Blush -->
+    <ellipse cx="218" cy="228" rx="10" ry="5" fill="#FFAAAA" opacity="0.2"/>
+    <ellipse cx="278" cy="228" rx="10" ry="5" fill="#FFAAAA" opacity="0.2"/>
+
+    <!-- ==================== HEADPHONES ==================== -->
+    <!-- Headphone band -->
+    <path d="M188 178 Q190 140 210 120 Q230 105 248 102 Q266 105 286 120 Q306 140 308 178" stroke="#333" stroke-width="4" fill="none"/>
+    <path d="M188 178 Q190 142 210 122 Q230 107 248 104 Q266 107 286 122 Q306 142 308 178" stroke="#555" stroke-width="2" fill="none"/>
+
+    <!-- Left ear cup -->
+    <ellipse cx="186" cy="200" rx="15" ry="22" fill="url(#headphoneGrad)" stroke="#AA8800" stroke-width="1.5"/>
+    <ellipse cx="186" cy="200" rx="10" ry="16" fill="#333" stroke="#555" stroke-width="0.5"/>
+    <ellipse cx="186" cy="200" rx="6" ry="10" fill="#444"/>
+
+    <!-- Right ear cup -->
+    <ellipse cx="310" cy="200" rx="15" ry="22" fill="url(#headphoneGrad)" stroke="#AA8800" stroke-width="1.5"/>
+    <ellipse cx="310" cy="200" rx="10" ry="16" fill="#333" stroke="#555" stroke-width="0.5"/>
+    <ellipse cx="310" cy="200" rx="6" ry="10" fill="#444"/>
+
+    <!-- ==================== HOODIE HOOD (behind head) ==================== -->
+    <path d="M195 260 L185 250 L182 230 L185 210 L190 195 Q195 175 200 165 L210 270 Z" fill="#222" stroke="#0A0A0A" stroke-width="0.5" opacity="0.7"/>
+    <path d="M300 260 L310 250 L313 230 L310 210 L305 195 Q300 175 295 165 L285 270 Z" fill="#222" stroke="#0A0A0A" stroke-width="0.5" opacity="0.7"/>
+
+    <!-- ==================== "02" MARKING ==================== -->
+    <text x="170" y="450" font-family="Arial Black, sans-serif" font-size="18" font-weight="bold" fill="#FFD700" opacity="0.8" transform="rotate(-5, 170, 450)">02</text>
+    <text x="310" y="450" font-family="Arial Black, sans-serif" font-size="18" font-weight="bold" fill="#FFD700" opacity="0.8" transform="rotate(5, 310, 450)">02</text>
+
+    <!-- ==================== ZIPPER PULLS / DETAILS ==================== -->
+    <!-- Jacket zipper teeth left -->
+    <path d="M215 285 L213 300 L212 320 L210 340 L209 360 L208 380 L207 400 L206 420 L205 440 L204 460" stroke="#888" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+    <!-- Jacket zipper teeth right -->
+    <path d="M280 285 L282 300 L283 320 L285 340 L286 360 L287 380 L288 400 L289 420 L290 440 L291 460" stroke="#888" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+
+    <!-- Small star detail on jacket -->
+    <polygon points="175,390 178,382 181,390 173,384 183,384" fill="#FFD700" stroke="#CCAA00" stroke-width="0.3"/>
+    <polygon points="320,390 317,382 314,390 322,384 312,384" fill="#FFD700" stroke="#CCAA00" stroke-width="0.3"/>
+  </g>
+
+  <!-- ==================== TITLE / LABEL ==================== -->
+  <text x="248" y="775" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#888" text-anchor="middle" letter-spacing="3">KAGAMINE LEN — STYLISH ENERGY</text>
+  <text x="248" y="790" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#AAA" text-anchor="middle" letter-spacing="2">PROJECT DIVA</text>
+</svg>
